@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Indie+Flower&display=swap');
+
+
+* /* for all the elements */
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body 
+{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    height: 100vh;
+    color: white;
+}
+
+ a /* links */
+{
+text-decoration: none;
+color: white;
+}
+
+/* welcome page/content styling starts here */
+.welcome
+{
+    text-align: center;
+    transform: translateY(40vh);
+    position: relative;
+    width: 100%;
+}
+
+.text1
+{
+    margin-right: 20px;
+    color:transparent;
+    font-size: 50px;
+    letter-spacing: 8px;
+    position:relative;
+    animation: text1 4s 1;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.text2
+{
+    color: transparent;
+    font-size: 40px;
+    letter-spacing: 5px;
+    display: block;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    animation: text2 4s 1; 
+    font-weight: lighter;
+}
+
+@keyframes text1
+{
+    0%
+    {
+        color:transparent;
+        margin-bottom: -40px;
+    }
+   
+    50%
+    {
+        color: white;
+        letter-spacing: 15px;
+        margin-bottom: -40px;
+    }
+    75%
+    {
+        color: white;
+        letter-spacing: 10px;
+        margin-bottom: -40px;
+    }
+}
+
+@keyframes text2
+{
+    0%
+    {
+        color:transparent;
+    }
+    40%
+    {
+        color:transparent;
+    }
+    55%
+    {
+        color:transparent;
+    } 
+    75%
+    {
+        color: powderblue;
+    }
+    90%
+    {
+        color: white;
+    }
+}
+/* welccome page/content styling ends here */
+
+/*navigation bar styling starts here */
+
+.nav-bar /* styling navbar to display on the top left */
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.brand-name /* styling restaurant name at the top left */
+{
+    font-size: 1.5rem;
+    margin: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+ .navbar-link ul /* styling navbar to display items side by side */
+{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+   
+} 
+
+.navbar-link ul li /* styling to give space in between list items */
+{
+    display: block;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+.navbar-link ul li a /* styling navbar list item links */
+{
+text-decoration: none;
+color: white;
+}
+
+.navbar-link ul li a:hover, a:active /* styling navbar links on mouse hover */
+{
+    color:gray;
+}
+
+
+
+
+.toggle-button /*styling the toggle bar */
+{
+    position: absolute;
+    top: 1.5rem;
+    right: 1rem;
+    display: none; /*the toggle bar does not appear on large screen */
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+}
+
+.toggle-button .bar 
+{
+  width: 100%; /* takes 100% width of the container */
+  height: 4px;
+  background-color: white;
+  border-radius: 10px;
+}
+/*navigation bar styling ends here */
+
+/* welcome/home page content styling  starts here*/
+.content
+{
+    background-image:url(image/food10.jpeg);
+    height: 100vh;
+    width: 100%;
+    background-position:right;
+    background-size:700px;
+    background-repeat: no-repeat; 
+    animation: bgimage 7s 1;
+}
+
+@keyframes bgimage
+{
+ 0%
+ {
+     background-image: none;
+ }
+ 30%
+ {
+     background-image: none;
+ }
+ 50%
+ {
+    background-image: none;
+ }
+ 70%
+ {
+    background-image: none;
+ }
+
+ 75%
+ {
+    background-image: url(image/food10.jpeg);
+    background-position-x: 100vw;
+ }
+
+
+}
+
+
+.detail1 p /*body text*/
+{
+   
+    color:white;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 7vw;
+    margin-top: 20vw;
+    margin-bottom: 50vw;
+    font-size: 5vw;
+    opacity: 0.7;
+    animation: reveal1 7s 1;
+
+}
+
+@keyframes reveal1
+{
+    0%
+    {
+        color: transparent;
+    }
+
+    50%
+    {
+        color: transparent
+    }
+    75%
+    {
+        color: white;
+        margin-left: 40vw;
+    }
+    100%
+    {
+        color: white;
+       
+    }
+}
+/* welcome/home page content styling  ends here*/
+
+/*contact page styling starts here*/
+
+
+.contact-page
+{
+    color:rgb(212, 210, 205);
+    font-family: 'Caveat', cursive;
+    text-align: center;
+    font-size: 40px;
+    margin-left: 50px;
+}
+
+/* contact form styling starts here*/
+
+
+.contact-section /* overall contact page styling */
+{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 80vh;
+    width: 100%;
+    margin-left:1vw ;
+    margin-top: 120px;position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content:ce;
+    flex-direction: column; /*for status bar */
+
+   
+}
+
+.contact-form /* contact details form are styling */
+{
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0px 0px 3px powderblue;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.form-group
+{
+    width: 100%;
+    margin-top: 20px;
+    font-size: 20px;
+    height: auto;
+}
+
+.form-group input, textarea
+{
+ padding: 5px;
+ width: 100%;
+ font-size: 17px;
+ border: 1px silver;
+ margin-top: 10px;
+}
+
+.form-group textarea
+{
+    resize: vertical;
+    min-height: 50px;
+    max-height: 200px;
+}
+
+.contact-form button
+{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    color: #31629b;
+    margin-top: 8px;
+    transition: 0.3ss ease background-color;
+}
+.contact-form button:hover
+{
+    background-color:rgb(214, 226,236);
+}
+
+#status
+{
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+}
+#status.success
+{
+    background-color:green;
+    animation: status 4s ease forwards;
+}
+
+
+@keyframes status /* success status display animation for above mentioned seconds */
+{
+    0%
+    {
+        opacity: 1;
+    }
+    90%
+    {
+        opacity: 1;
+    }
+    100%
+    {
+        opacity: 0;
+    }
+}
+
+
+/* contact form styling ends here*/
+
+
+
+
+
+
+@media (max-width:700px)
+{
+
+    .toggle-button
+    {
+        display: flex; /* toggle bar appears on screens with max-width=400px*/
+    }
+    .navbar-link
+    {
+     display: none;  /*to disapper the list items on small screens as top nav*/
+     width: 100%;
+    }
+    .nav-bar
+    {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar-link ul 
+    {
+        flex-direction: column;
+        align-items:flex-end;
+        width: 100%;
+        position: absolute;
+    }
+
+    .navbar-link ul li
+    {
+        flex-direction: column;
+        padding: 1% 1%;
+        font-size: small;
+    }
+
+    .navbar-link.active
+    {
+        display: flex;
+    }
+
+    .content
+    {
+        background-position:-15px;
+        background-position: right;
+        background-size:700px;
+        background-repeat: no-repeat;
+        animation: bgimage 7s 1;
+    }
+
+
+.detail1
+{
+    color:transparent;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 80vw;
+    margin-left: 50vw;
+    position: fixed;
+    font-size: 10vw;
+    animation: reveal1 7s 1;   
+}
+
+
+
+}
+
+
+
+
+
+
+
